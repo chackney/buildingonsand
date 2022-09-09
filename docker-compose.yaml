@@ -1,0 +1,17 @@
+services:
+  postgresql:
+    networks: [ 'stack' ]
+    image: docker.io/bitnami/postgresql:latest
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - POSTGRESQL_USERNAME=buildingonsand
+      - POSTGRESQL_DATABASE=buildingonsand
+    volumes:
+      - 'postgresql_data:/bitnami/postgresql'
+    ports:
+      - 5432:5432
+volumes:
+  postgresql_data:
+    driver: local
+
+networks: {stack: {}}

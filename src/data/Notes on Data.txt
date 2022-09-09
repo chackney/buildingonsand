@@ -1,0 +1,20 @@
+Spring boot release data:
+https://spring.io/projects/spring-boot#support
+
+Kubernetes Release Data:
+https://kubernetes.io/releases/patch-releases/#support-period
+
+Assume cherry pick is the support end data - The minor release would continue but you would need to get up to the highest patch.
+
+File format:
+PATCH RELEASE	CHERRY PICK DEADLINE	TARGET DATE	NOTE
+
+Maybe we can set the end date bases on something else.
+
+Alpine
+There are several release branches for Alpine Linux available at the same time. Each May and November we make a release branch from edge. The main repository is typically supported for 2 years and the community repository is supported until next stable release.
+Security fixes beyond that can be made on request when there are patches available.
+
+Data file headers are:
+Branch 	Branch date Git Branch 	Minor releases 	End of support
+Original page: https://alpinelinux.org/releases/
