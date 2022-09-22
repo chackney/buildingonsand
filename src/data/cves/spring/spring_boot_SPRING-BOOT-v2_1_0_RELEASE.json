@@ -1,0 +1,1197 @@
+{
+  "reports" : {
+    "org.jboss:jandex:jar:2.0.5.Final:compile" : {
+      "coordinates" : "pkg:maven/org.jboss/jandex@2.0.5.Final",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.jboss/jandex@2.0.5.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hibernate:hibernate-core:jar:5.3.7.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate/hibernate-core@5.3.7.Final",
+      "description" : "A module of the Hibernate Core project",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate/hibernate-core@5.3.7.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-25638",
+        "title" : "[CVE-2020-25638] CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "description" : "A flaw was found in hibernate-core in versions prior to and including 5.4.23.Final. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is used in the SQL comments of the query. This flaw could allow an attacker to access unauthorized information or possibly conduct further attacks. The highest threat from this vulnerability is to data confidentiality and integrity.",
+        "cvssScore" : 7.4,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "cwe" : "CWE-89",
+        "cve" : "CVE-2020-25638",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-25638?component-type=maven&component-name=org.hibernate%2Fhibernate-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2019-14900",
+        "title" : "[CVE-2019-14900] CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "description" : "A flaw was found in Hibernate ORM in versions before 5.3.18, 5.4.18 and 5.5.0.Beta1. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is used in the SELECT or GROUP BY parts of the query. This flaw could allow an attacker to access unauthorized information or possibly conduct further attacks.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+        "cwe" : "CWE-89",
+        "cve" : "CVE-2019-14900",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-14900?component-type=maven&component-name=org.hibernate%2Fhibernate-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.hibernate.validator:hibernate-validator:jar:6.0.13.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate.validator/hibernate-validator@6.0.13.Final",
+      "description" : "Hibernate's Bean Validation (JSR-380) reference implementation.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate.validator/hibernate-validator@6.0.13.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2019-10219",
+        "title" : "[CVE-2019-10219] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+        "description" : "A vulnerability was found in Hibernate-Validator. The SafeHtml validator annotation fails to properly sanitize payloads consisting of potentially malicious code in HTML comments and instructions. This vulnerability can result in an XSS attack.",
+        "cvssScore" : 6.1,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+        "cwe" : "CWE-79",
+        "cve" : "CVE-2019-10219",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-10219?component-type=maven&component-name=org.hibernate.validator%2Fhibernate-validator&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-10693",
+        "title" : "[CVE-2020-10693] CWE-20: Improper Input Validation",
+        "description" : "A flaw was found in Hibernate Validator version 6.1.2.Final. A bug in the message interpolation processor enables invalid EL expressions to be evaluated as if they were valid. This flaw allows attackers to bypass input sanitation (escaping, stripping) controls that developers may have put in place when handling user-controlled data in error messages.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-20",
+        "cve" : "CVE-2020-10693",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-10693?component-type=maven&component-name=org.hibernate.validator%2Fhibernate-validator&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.objenesis:objenesis:jar:2.6:test" : {
+      "coordinates" : "pkg:maven/org.objenesis/objenesis@2.6",
+      "description" : "A library for instantiating Java objects",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.objenesis/objenesis@2.6?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-test:jar:5.1.2.RELEASE:test" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-test@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-test@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.7:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.9.7",
+      "description" : "Add-on module for Jackson (http://jackson.codehaus.org) to support\nintrospection of method/constructor parameter names, without having to add explicit property name annotation.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.9.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-tx:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-tx@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-tx@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.7:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.9.7",
+      "description" : "Add-on module for Jackson (http://jackson.codehaus.org) to support\nJDK 8 data types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.9.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-context:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-context@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-context@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22968",
+        "title" : "[CVE-2022-22968] CWE-178: Improper Handling of Case Sensitivity",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.18, 5.2.0 - 5.2.20, and older unsupported versions, the patterns for disallowedFields on a DataBinder are case sensitive which means a field is not effectively protected unless it is listed with both upper and lower case for the first character of the field, including upper and lower case for the first character of all nested fields within the property path.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-178",
+        "cve" : "CVE-2022-22968",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22968?component-type=maven&component-name=org.springframework%2Fspring-context&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.12:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@9.0.12",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@9.0.12?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "javax.validation:validation-api:jar:2.0.1.Final:compile" : {
+      "coordinates" : "pkg:maven/javax.validation/validation-api@2.0.1.Final",
+      "description" : "Bean Validation (JSR-303) API.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.validation/validation-api@2.0.1.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.12:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@9.0.12",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@9.0.12?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.1:compile" : {
+      "coordinates" : "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.11.1",
+      "description" : "Binding between LOG4J 2 API and SLF4J",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.11.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "junit:junit:jar:4.12:test" : {
+      "coordinates" : "pkg:maven/junit/junit@4.12",
+      "description" : "JUnit is a regression testing framework written by Erich Gamma and Kent Beck.\n        It is used by the developer who implements unit tests in Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/junit/junit@4.12?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-15250",
+        "title" : "[CVE-2020-15250] CWE-732: Incorrect Permission Assignment for Critical Resource",
+        "description" : "In JUnit4 from version 4.7 and before 4.13.1, the test rule TemporaryFolder contains a local information disclosure vulnerability. On Unix like systems, the system's temporary directory is shared between all users on that system. Because of this, when files and directories are written into this directory they are, by default, readable by other users on that same system. This vulnerability does not allow other users to overwrite the contents of these directories or files. This is purely an information disclosure vulnerability. This vulnerability impacts you if the JUnit tests write sensitive information, like API keys or passwords, into the temporary folder, and the JUnit tests execute in an environment where the OS has other untrusted users. Because certain JDK file system APIs were only added in JDK 1.7, this this fix is dependent upon the version of the JDK you are using. For Java 1.7 and higher users: this vulnerability is fixed in 4.13.1. For Java 1.6 and lower users: no patch is available, you must use the workaround below. If you are unable to patch, or are stuck running on Java 1.6, specifying the `java.io.tmpdir` system environment variable to a directory that is exclusively owned by the executing user will fix this vulnerability. For more information, including an example of vulnerable code, see the referenced GitHub Security Advisory.",
+        "cvssScore" : 5.5,
+        "cvssVector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+        "cwe" : "CWE-732",
+        "cve" : "CVE-2020-15250",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-15250?component-type=maven&component-name=junit%2Fjunit&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework.boot:spring-boot-starter-logging:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-logging@2.1.0.RELEASE",
+      "description" : "Spring Boot Logger Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-logging@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@2.1.0.RELEASE",
+      "description" : "Spring Boot JDBC Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "javax.persistence:javax.persistence-api:jar:2.2:compile" : {
+      "coordinates" : "pkg:maven/javax.persistence/javax.persistence-api@2.2",
+      "description" : "Java(TM) Persistence API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.persistence/javax.persistence-api@2.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.9.7",
+      "description" : "Add-on module to support JSR-310 (Java 8 Date & Time API) data types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.9.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2018-1000873",
+        "title" : "[CVE-2018-1000873] CWE-20: Improper Input Validation",
+        "description" : "Fasterxml Jackson version Before 2.9.8 contains a CWE-20: Improper Input Validation vulnerability in Jackson-Modules-Java8 that can result in Causes a denial-of-service (DoS). This attack appear to be exploitable via The victim deserializes malicious input, specifically very large values in the nanoseconds field of a time value. This vulnerability appears to have been fixed in 2.9.8.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-20",
+        "cve" : "CVE-2018-1000873",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2018-1000873?component-type=maven&component-name=com.fasterxml.jackson.datatype%2Fjackson-datatype-jsr310&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework.data:spring-data-jpa:jar:2.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.data/spring-data-jpa@2.1.2.RELEASE",
+      "description" : "Spring Data module to provide sophisticated support for JPA repositories",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.data/spring-data-jpa@2.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2019-3797",
+        "title" : "[CVE-2019-3797] CWE-200: Information Exposure",
+        "description" : "This affects Spring Data JPA in versions up to and including 2.1.5, 2.0.13 and 1.11.19. Derived queries using any of the predicates âstartingWithâ, âendingWithâ or âcontainingâ could return more results than anticipated when a maliciously crafted query parameter value is supplied. Also, LIKE expressions in manually defined queries could return unexpected results if the parameter values bound did not have escaped reserved characters properly.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "cwe" : "CWE-200",
+        "cve" : "CVE-2019-3797",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-3797?component-type=maven&component-name=org.springframework.data%2Fspring-data-jpa&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2019-3802",
+        "title" : "[CVE-2019-3802] CWE-200: Information Exposure",
+        "description" : "This affects Spring Data JPA in versions up to and including 2.1.6, 2.0.14 and 1.11.20. ExampleMatcher using ExampleMatcher.StringMatcher.STARTING, ExampleMatcher.StringMatcher.ENDING or ExampleMatcher.StringMatcher.CONTAINING could return more results than anticipated when a maliciously crafted example value is supplied.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "cwe" : "CWE-200",
+        "cve" : "CVE-2019-3802",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-3802?component-type=maven&component-name=org.springframework.data%2Fspring-data-jpa&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "ch.qos.logback:logback-classic:jar:1.2.3:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-classic@1.2.3",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-classic@1.2.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2021-4517",
+        "title" : "[sonatype-2021-4517] CWE-502: Deserialization of Untrusted Data",
+        "description" : "logback-classic - Deserialization of Untrusted Data [CVE-2021-42550]\n\nThe application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+        "cvssScore" : 6.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2021-42550",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4517?component-type=maven&component-name=ch.qos.logback%2Flogback-classic&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework.boot:spring-boot-starter-web:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-web@2.1.0.RELEASE",
+      "description" : "Spring Boot Web Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-web@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.yaml:snakeyaml:jar:1.23:runtime" : {
+      "coordinates" : "pkg:maven/org.yaml/snakeyaml@1.23",
+      "description" : "YAML 1.1 parser and emitter for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.yaml/snakeyaml@1.23?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2017-18640",
+        "title" : "[CVE-2017-18640] CWE-776: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')",
+        "description" : "The Alias feature in SnakeYAML before 1.26 allows entity expansion during a load operation, a related issue to CVE-2003-1564.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-776",
+        "cve" : "CVE-2017-18640",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2017-18640?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2022-25857",
+        "title" : "[CVE-2022-25857] CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')",
+        "description" : "The package org.yaml:snakeyaml from 0 and before 1.31 are vulnerable to Denial of Service (DoS) due missing to nested depth limitation for collections.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-400",
+        "cve" : "CVE-2022-25857",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-25857?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2022-38752",
+        "title" : "[CVE-2022-38752] CWE-787: Out-of-bounds Write",
+        "description" : "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stack-overflow.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2022-38752",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-38752?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "net.minidev:json-smart:jar:2.3:test" : {
+      "coordinates" : "pkg:maven/net.minidev/json-smart@2.3",
+      "description" : "JSON (JavaScript Object Notation) is a lightweight data-interchange format.\n    It is easy for humans to read and write. It is easy for machines to parse and generate.\n    It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition\n    - December 1999. JSON is a text format that is completely language independent but uses\n    conventions that are familiar to programmers of the C-family of languages, including C, C++, C#,\n    Java, JavaScript, Perl, Python, and many others.\n    These properties make JSON an ideal data-interchange language.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.minidev/json-smart@2.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2021-27568",
+        "title" : "[CVE-2021-27568] CWE-754: Improper Check for Unusual or Exceptional Conditions",
+        "description" : "An issue was discovered in netplex json-smart-v1 through 2015-10-23 and json-smart-v2 through 2.4. An exception is thrown from a function, but it is not caught, as demonstrated by NumberFormatException. When it is not caught, it may cause programs using the library to crash or expose sensitive information.",
+        "cvssScore" : 9.1,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+        "cwe" : "CWE-754",
+        "cve" : "CVE-2021-27568",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-27568?component-type=maven&component-name=net.minidev%2Fjson-smart&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-31684",
+        "title" : "[CVE-2021-31684] CWE-787: Out-of-bounds Write",
+        "description" : "A vulnerability was discovered in the indexOf function of JSONParserByteArray in JSON Smart versions 1.3 and 2.4 which causes a denial of service (DOS) via a crafted web request.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2021-31684",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-31684?component-type=maven&component-name=net.minidev%2Fjson-smart&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "javax.xml.bind:jaxb-api:jar:2.3.1:compile" : {
+      "coordinates" : "pkg:maven/javax.xml.bind/jaxb-api@2.3.1",
+      "description" : "JAXB (JSR 222) API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.xml.bind/jaxb-api@2.3.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.7",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2018-19360",
+        "title" : "[CVE-2018-19360] CWE-502: Deserialization of Untrusted Data",
+        "description" : "FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the axis2-transport-jms class from polymorphic deserialization.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2018-19360",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2018-19360?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2018-19361",
+        "title" : "[CVE-2018-19361] CWE-502: Deserialization of Untrusted Data",
+        "description" : "FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the openjpa class from polymorphic deserialization.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2018-19361",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2018-19361?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2018-19362",
+        "title" : "[CVE-2018-19362] CWE-502: Deserialization of Untrusted Data",
+        "description" : "FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the jboss-common-core class from polymorphic deserialization.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2018-19362",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2018-19362?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-25649",
+        "title" : "[CVE-2020-25649] CWE-611: Improper Restriction of XML External Entity Reference ('XXE')",
+        "description" : "A flaw was found in FasterXML Jackson Databind, where it did not have entity expansion secured properly. This flaw allows vulnerability to XML external entity (XXE) attacks. The highest threat from this vulnerability is data integrity.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+        "cwe" : "CWE-611",
+        "cve" : "CVE-2020-25649",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-25649?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-36518",
+        "title" : "[CVE-2020-36518] CWE-787: Out-of-bounds Write",
+        "description" : "jackson-databind before 2.13.0 allows a Java StackOverflow exception and denial of service via a large depth of nested objects.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2020-36518",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-36518?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-orm:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-orm@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-orm@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "javax.transaction:javax.transaction-api:jar:1.3:compile" : {
+      "coordinates" : "pkg:maven/javax.transaction/javax.transaction-api@1.3",
+      "description" : "Project GlassFish Java Transaction API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.transaction/javax.transaction-api@1.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter@2.1.0.RELEASE",
+      "description" : "Spring Boot Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-aspects:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-aspects@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-aspects@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-jcl:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-jcl@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-jcl@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "antlr:antlr:jar:2.7.7:compile" : {
+      "coordinates" : "pkg:maven/antlr/antlr@2.7.7",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/antlr/antlr@2.7.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "javax.annotation:javax.annotation-api:jar:1.3.2:compile" : {
+      "coordinates" : "pkg:maven/javax.annotation/javax.annotation-api@1.3.2",
+      "description" : "Common Annotations for the JavaTM Platform API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.annotation/javax.annotation-api@1.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hamcrest:hamcrest-core:jar:1.3:test" : {
+      "coordinates" : "pkg:maven/org.hamcrest/hamcrest-core@1.3",
+      "description" : "This is the core API of hamcrest matcher framework \n\t\tto be used by third-party framework providers. \n\t\tThis includes the a foundation set of matcher\n\t\timplementations for common operations.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hamcrest/hamcrest-core@1.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-actuator:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-actuator@2.1.0.RELEASE",
+      "description" : "Spring Boot Actuator",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-actuator@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.skyscreamer:jsonassert:jar:1.5.0:test" : {
+      "coordinates" : "pkg:maven/org.skyscreamer/jsonassert@1.5.0",
+      "description" : "A library to develop RESTful but flexible APIs",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.skyscreamer/jsonassert@1.5.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.projectlombok:lombok:jar:1.18.2:compile" : {
+      "coordinates" : "pkg:maven/org.projectlombok/lombok@1.18.2",
+      "description" : "Spice up your java: Automatic Resource Management, automatic generation of getters, setters, equals, hashCode and toString, and more!",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.projectlombok/lombok@1.18.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.jayway.jsonpath:json-path:jar:2.4.0:test" : {
+      "coordinates" : "pkg:maven/com.jayway.jsonpath/json-path@2.4.0",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.jayway.jsonpath/json-path@2.4.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "javax.activation:javax.activation-api:jar:1.2.0:compile" : {
+      "coordinates" : "pkg:maven/javax.activation/javax.activation-api@1.2.0",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.activation/javax.activation-api@1.2.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile" : {
+      "coordinates" : "pkg:maven/org.jboss.logging/jboss-logging@3.3.2.Final",
+      "description" : "The JBoss Logging Framework",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.jboss.logging/jboss-logging@3.3.2.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-data-jpa:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@2.1.0.RELEASE",
+      "description" : "Spring Boot Data JPA Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hamcrest:hamcrest-library:jar:1.3:test" : {
+      "coordinates" : "pkg:maven/org.hamcrest/hamcrest-library@1.3",
+      "description" : "Hamcrest library of matcher implementations.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hamcrest/hamcrest-library@1.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.aspectj:aspectjweaver:jar:1.9.2:compile" : {
+      "coordinates" : "pkg:maven/org.aspectj/aspectjweaver@1.9.2",
+      "description" : "The AspectJ weaver introduces advices to java classes",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.aspectj/aspectjweaver@1.9.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "net.bytebuddy:byte-buddy:jar:1.9.3:compile" : {
+      "coordinates" : "pkg:maven/net.bytebuddy/byte-buddy@1.9.3",
+      "description" : "Byte Buddy is a Java library for creating Java classes at run time.\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.bytebuddy/byte-buddy@1.9.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@2.1.0.RELEASE",
+      "description" : "Spring Boot AutoConfigure",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-autoconfigure@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.xmlunit:xmlunit-core:jar:2.6.2:test" : {
+      "coordinates" : "pkg:maven/org.xmlunit/xmlunit-core@2.6.2",
+      "description" : "XMLUnit for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.xmlunit/xmlunit-core@2.6.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml:classmate:jar:1.4.0:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml/classmate@1.4.0",
+      "description" : "Library for introspecting types with full generic information\nincluding resolving of field and method types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml/classmate@1.4.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "net.bytebuddy:byte-buddy-agent:jar:1.9.3:test" : {
+      "coordinates" : "pkg:maven/net.bytebuddy/byte-buddy-agent@1.9.3",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.bytebuddy/byte-buddy-agent@1.9.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@2.1.0.RELEASE",
+      "description" : "Spring Boot Tomcat Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "ch.qos.logback:logback-core:jar:1.2.3:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-core@1.2.3",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-core@1.2.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2021-4517",
+        "title" : "[sonatype-2021-4517] CWE-502: Deserialization of Untrusted Data",
+        "description" : "logback-classic - Deserialization of Untrusted Data [CVE-2021-42550]\n\nThe application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+        "cvssScore" : 6.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2021-42550",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4517?component-type=maven&component-name=ch.qos.logback%2Flogback-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2021-1175",
+        "title" : "1 vulnerability found",
+        "description" : "1 non-CVE vulnerability found. To see more details, please create a free account at https://ossindex.sonatype.org/ and request for this information using your registered account",
+        "cvssScore" : 8.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+        "cwe" : "CWE-699",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-1175"
+      } ]
+    },
+    "org.dom4j:dom4j:jar:2.1.1:compile" : {
+      "coordinates" : "pkg:maven/org.dom4j/dom4j@2.1.1",
+      "description" : "flexible XML framework for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.dom4j/dom4j@2.1.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-10683",
+        "title" : "[CVE-2020-10683] CWE-611: Improper Restriction of XML External Entity Reference ('XXE')",
+        "description" : "dom4j before 2.0.3 and 2.1.x before 2.1.3 allows external DTDs and External Entities by default, which might enable XXE attacks. However, there is popular external documentation from OWASP showing how to enable the safe, non-default behavior in any application that uses dom4j.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-611",
+        "cve" : "CVE-2020-10683",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-10683?component-type=maven&component-name=org.dom4j%2Fdom4j&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "io.micrometer:micrometer-core:jar:1.1.0:compile" : {
+      "coordinates" : "pkg:maven/io.micrometer/micrometer-core@1.1.0",
+      "description" : "Application monitoring instrumentation facade",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/io.micrometer/micrometer-core@1.1.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-test:jar:2.1.0.RELEASE:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-test@2.1.0.RELEASE",
+      "description" : "Spring Boot Test Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-test@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-json:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-json@2.1.0.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-json@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.slf4j:slf4j-api:jar:1.7.25:compile" : {
+      "coordinates" : "pkg:maven/org.slf4j/slf4j-api@1.7.25",
+      "description" : "The slf4j API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.slf4j/slf4j-api@1.7.25?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-jdbc:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-jdbc@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-jdbc@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "net.minidev:accessors-smart:jar:1.2:test" : {
+      "coordinates" : "pkg:maven/net.minidev/accessors-smart@1.2",
+      "description" : "Java reflect give poor performance on getter setter an constructor calls,\naccessors-smart use ASM to speed up those calls.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.minidev/accessors-smart@1.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.9.7",
+      "description" : "Core Jackson abstractions, basic JSON streaming API implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-core@2.9.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.slf4j:jul-to-slf4j:jar:1.7.25:compile" : {
+      "coordinates" : "pkg:maven/org.slf4j/jul-to-slf4j@1.7.25",
+      "description" : "JUL to SLF4J bridge",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.slf4j/jul-to-slf4j@1.7.25?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hdrhistogram:HdrHistogram:jar:2.1.9:compile" : {
+      "coordinates" : "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.9",
+      "description" : "HdrHistogram supports the recording and analyzing sampled data value\n        counts across a configurable integer value range with configurable value\n        precision within the range. Value precision is expressed as the number of\n        significant digits in the value recording, and provides control over value\n        quantization behavior across the value range and the subsequent value\n        resolution at any given level.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hdrhistogram/HdrHistogram@2.1.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-test@2.1.0.RELEASE",
+      "description" : "Spring Boot Test",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-test@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-27772",
+        "title" : "[CVE-2022-27772] CWE-668: Exposure of Resource to Wrong Sphere",
+        "description" : "** UNSUPPORTED WHEN ASSIGNED ** spring-boot versions prior to version v2.2.11.RELEASE was vulnerable to temporary directory hijacking. This vulnerability impacted the org.springframework.boot.web.server.AbstractConfigurableWebServerFactory.createTempDir method. NOTE: This vulnerability only affects products and/or versions that are no longer supported by the maintainer.",
+        "cvssScore" : 7.8,
+        "cvssVector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-668",
+        "cve" : "CVE-2022-27772",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-27772?component-type=maven&component-name=org.springframework.boot%2Fspring-boot-test&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "com.zaxxer:HikariCP:jar:3.2.0:compile" : {
+      "coordinates" : "pkg:maven/com.zaxxer/HikariCP@3.2.0",
+      "description" : "Ultimate JDBC Connection Pool",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.zaxxer/HikariCP@3.2.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.assertj:assertj-core:jar:3.11.1:test" : {
+      "coordinates" : "pkg:maven/org.assertj/assertj-core@3.11.1",
+      "description" : "Rich and fluent assertions for testing",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.assertj/assertj-core@3.11.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-test-autoconfigure:jar:2.1.0.RELEASE:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@2.1.0.RELEASE",
+      "description" : "Spring Boot Test Auto-Configure",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-beans:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-beans@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-beans@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22965",
+        "title" : "[CVE-2022-22965] CWE-94: Improper Control of Generation of Code ('Code Injection')",
+        "description" : "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-94",
+        "cve" : "CVE-2022-22965",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22965?component-type=maven&component-name=org.springframework%2Fspring-beans&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2022-1764",
+        "title" : "[sonatype-2022-1764] CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')",
+        "description" : "Spring-Beans-  Remote Code Execution (RCE) [CVE-2022-22965]\n\nThe application uses external input with reflection to select which classes or code to use, but it does not sufficiently prevent the input from selecting improper classes or code.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-470",
+        "cve" : "CVE-2022-22965",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2022-1764?component-type=maven&component-name=org.springframework%2Fspring-beans&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-webmvc:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-webmvc@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-webmvc@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-5397",
+        "title" : "[CVE-2020-5397] CWE-352: Cross-Site Request Forgery (CSRF)",
+        "description" : "Spring Framework, versions 5.2.x prior to 5.2.3 are vulnerable to CSRF attacks through CORS preflight requests that target Spring MVC (spring-webmvc module) or Spring WebFlux (spring-webflux module) endpoints. Only non-authenticated endpoints are vulnerable because preflight requests should not include credentials and therefore requests should fail authentication. However a notable exception to this are Chrome based browsers when using client certificates for authentication since Chrome sends TLS client certificates in CORS preflight requests in violation of spec requirements. No HTTP body can be sent or received as a result of this attack.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-352",
+        "cve" : "CVE-2020-5397",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-5397?component-type=maven&component-name=org.springframework%2Fspring-webmvc&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-22060",
+        "title" : "[CVE-2021-22060] CWE-117: Improper Output Neutralization for Logs",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.13, 5.2.0 - 5.2.18, and older unsupported versions, it is possible for a user to provide malicious input to cause the insertion of additional log entries. This is a follow-up to CVE-2021-22096 that protects against additional types of input and in more places of the Spring Framework codebase.",
+        "cvssScore" : 4.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-117",
+        "cve" : "CVE-2021-22060",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22060?component-type=maven&component-name=org.springframework%2Fspring-webmvc&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.ow2.asm:asm:jar:5.0.4:test" : {
+      "coordinates" : "pkg:maven/org.ow2.asm/asm@5.0.4",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.ow2.asm/asm@5.0.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-web:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-web@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-web@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2016-1000027",
+        "title" : "[CVE-2016-1000027] CWE-502: Deserialization of Untrusted Data",
+        "description" : "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2016-1000027",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2016-1000027?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-22118",
+        "title" : "[CVE-2021-22118] CWE-269: Improper Privilege Management",
+        "description" : "In Spring Framework, versions 5.2.x prior to 5.2.15 and versions 5.3.x prior to 5.3.7, a WebFlux application is vulnerable to a privilege escalation: by (re)creating the temporary storage directory, a locally authenticated malicious user can read or modify files that have been uploaded to the WebFlux application, or overwrite arbitrary files with multipart request data.",
+        "cvssScore" : 7.8,
+        "cvssVector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-269",
+        "cve" : "CVE-2021-22118",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22118?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-5398",
+        "title" : "[CVE-2020-5398] CWE-494: Download of Code Without Integrity Check",
+        "description" : "In Spring Framework, versions 5.2.x prior to 5.2.3, versions 5.1.x prior to 5.1.13, and versions 5.0.x prior to 5.0.16, an application is vulnerable to a reflected file download (RFD) attack when it sets a \"Content-Disposition\" header in the response where the filename attribute is derived from user supplied input.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-494",
+        "cve" : "CVE-2020-5398",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-5398?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-5421",
+        "title" : "[CVE-2020-5421] CWE-20: Improper Input Validation",
+        "description" : "In Spring Framework versions 5.2.0 - 5.2.8, 5.1.0 - 5.1.17, 5.0.0 - 5.0.18, 4.3.0 - 4.3.28, and older unsupported versions, the protections against RFD attacks from CVE-2015-5211 may be bypassed depending on the browser used through the use of a jsessionid path parameter.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:H/A:N",
+        "cwe" : "CWE-20",
+        "cve" : "CVE-2020-5421",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-5421?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-22096",
+        "title" : "[CVE-2021-22096] CWE-117: Improper Output Neutralization for Logs",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.10, 5.2.0 - 5.2.17, and older unsupported versions, it is possible for a user to provide malicious input to cause the insertion of additional log entries.",
+        "cvssScore" : 4.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-117",
+        "cve" : "CVE-2021-22096",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22096?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework.boot:spring-boot-starter-aop:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-aop@2.1.0.RELEASE",
+      "description" : "Spring Boot AOP Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-aop@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-core:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-core@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-core@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.9.0",
+      "description" : "Core annotations used for value types, used by Jackson databinding package.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.9.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot@2.1.0.RELEASE",
+      "description" : "Spring Boot",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-27772",
+        "title" : "[CVE-2022-27772] CWE-668: Exposure of Resource to Wrong Sphere",
+        "description" : "** UNSUPPORTED WHEN ASSIGNED ** spring-boot versions prior to version v2.2.11.RELEASE was vulnerable to temporary directory hijacking. This vulnerability impacted the org.springframework.boot.web.server.AbstractConfigurableWebServerFactory.createTempDir method. NOTE: This vulnerability only affects products and/or versions that are no longer supported by the maintainer.",
+        "cvssScore" : 7.8,
+        "cvssVector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-668",
+        "cve" : "CVE-2022-27772",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-27772?component-type=maven&component-name=org.springframework.boot%2Fspring-boot&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.apache.logging.log4j:log4j-api:jar:2.11.1:compile" : {
+      "coordinates" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.11.1",
+      "description" : "The Log4J API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.logging.log4j/log4j-api@2.11.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.data:spring-data-commons:jar:2.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.data/spring-data-commons@2.1.2.RELEASE",
+      "description" : "Spring Data Commons. Interfaces and code shared between the various datastore specific implementations.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.data/spring-data-commons@2.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.latencyutils:LatencyUtils:jar:2.0.3:compile" : {
+      "coordinates" : "pkg:maven/org.latencyutils/LatencyUtils@2.0.3",
+      "description" : "LatencyUtils is a package that provides latency recording and reporting utilities.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.latencyutils/LatencyUtils@2.0.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@2.1.0.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.mockito:mockito-core:jar:2.23.0:test" : {
+      "coordinates" : "pkg:maven/org.mockito/mockito-core@2.23.0",
+      "description" : "Mock objects library for java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.mockito/mockito-core@2.23.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate.common/hibernate-commons-annotations@5.0.4.Final",
+      "description" : "Common reflection code used in support of annotation processing",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate.common/hibernate-commons-annotations@5.0.4.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.12:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.12",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.12?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-25762",
+        "title" : "[CVE-2022-25762] CWE-404: Improper Resource Shutdown or Release",
+        "description" : "If a web application sends a WebSocket message concurrently with the WebSocket connection closing when running on Apache Tomcat 8.5.0 to 8.5.75 or Apache Tomcat 9.0.0.M1 to 9.0.20, it is possible that the application will continue to use the socket after it has been closed. The error handling triggered in this case could cause the a pooled object to be placed in the pool twice. This could result in subsequent connections using the same object concurrently which could result in data being returned to the wrong use and/or other errors.",
+        "cvssScore" : 8.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+        "cwe" : "CWE-404",
+        "cve" : "CVE-2022-25762",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-25762?component-type=maven&component-name=org.apache.tomcat.embed%2Ftomcat-embed-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2019-0232",
+        "title" : "[CVE-2019-0232] CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+        "description" : "When running on Windows with enableCmdLineArguments enabled, the CGI Servlet in Apache Tomcat 9.0.0.M1 to 9.0.17, 8.5.0 to 8.5.39 and 7.0.0 to 7.0.93 is vulnerable to Remote Code Execution due to a bug in the way the JRE passes command line arguments to Windows. The CGI Servlet is disabled by default. The CGI option enableCmdLineArguments is disable by default in Tomcat 9.0.x (and will be disabled by default in all versions in response to this vulnerability). For a detailed explanation of the JRE behaviour, see Markus Wulftange's blog (https://codewhitesec.blogspot.com/2016/02/java-and-command-line-injections-in-windows.html) and this archived MSDN blog (https://web.archive.org/web/20161228144344/https://blogs.msdn.microsoft.com/twistylittlepassagesallalike/2011/04/23/everyone-quotes-command-line-arguments-the-wrong-way/).",
+        "cvssScore" : 8.1,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-78",
+        "cve" : "CVE-2019-0232",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-0232?component-type=maven&component-name=org.apache.tomcat.embed%2Ftomcat-embed-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.javassist:javassist:jar:3.23.1-GA:compile" : {
+      "coordinates" : "pkg:maven/org.javassist/javassist@3.23.1-GA",
+      "description" : "Javassist (JAVA programming ASSISTant) makes Java bytecode manipulation\n     simple.  It is a class library for editing bytecodes in Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.javassist/javassist@3.23.1-GA?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hsqldb:hsqldb:jar:2.4.1:compile" : {
+      "coordinates" : "pkg:maven/org.hsqldb/hsqldb@2.4.1",
+      "description" : "Lightweight 100% Java SQL Database Engine",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hsqldb/hsqldb@2.4.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-aop:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-aop@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-aop@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-actuator:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@2.1.0.RELEASE",
+      "description" : "Spring Boot Actuator Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-actuator@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test" : {
+      "coordinates" : "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1",
+      "description" : "????JSON (JavaScript Object Notation) is a lightweight data-interchange format.\n      This is the org.json compatible Android implementation extracted from the Android SDK\n   ??",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-expression:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-expression@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-expression@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22950",
+        "title" : "[CVE-2022-22950] CWE-770: Allocation of Resources Without Limits or Throttling",
+        "description" : "n Spring Framework versions 5.3.0 - 5.3.16 and older unsupported versions, it is possible for a user to provide a specially crafted SpEL expression that may cause a denial of service condition.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-770",
+        "cve" : "CVE-2022-22950",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22950?component-type=maven&component-name=org.springframework%2Fspring-expression&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    }
+  },
+  "vulnerable" : {
+    "org.hibernate.validator:hibernate-validator:jar:6.0.13.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate.validator/hibernate-validator@6.0.13.Final",
+      "description" : "Hibernate's Bean Validation (JSR-380) reference implementation.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate.validator/hibernate-validator@6.0.13.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2019-10219",
+        "title" : "[CVE-2019-10219] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+        "description" : "A vulnerability was found in Hibernate-Validator. The SafeHtml validator annotation fails to properly sanitize payloads consisting of potentially malicious code in HTML comments and instructions. This vulnerability can result in an XSS attack.",
+        "cvssScore" : 6.1,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+        "cwe" : "CWE-79",
+        "cve" : "CVE-2019-10219",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-10219?component-type=maven&component-name=org.hibernate.validator%2Fhibernate-validator&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-10693",
+        "title" : "[CVE-2020-10693] CWE-20: Improper Input Validation",
+        "description" : "A flaw was found in Hibernate Validator version 6.1.2.Final. A bug in the message interpolation processor enables invalid EL expressions to be evaluated as if they were valid. This flaw allows attackers to bypass input sanitation (escaping, stripping) controls that developers may have put in place when handling user-controlled data in error messages.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-20",
+        "cve" : "CVE-2020-10693",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-10693?component-type=maven&component-name=org.hibernate.validator%2Fhibernate-validator&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.hibernate:hibernate-core:jar:5.3.7.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate/hibernate-core@5.3.7.Final",
+      "description" : "A module of the Hibernate Core project",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate/hibernate-core@5.3.7.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-25638",
+        "title" : "[CVE-2020-25638] CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "description" : "A flaw was found in hibernate-core in versions prior to and including 5.4.23.Final. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is used in the SQL comments of the query. This flaw could allow an attacker to access unauthorized information or possibly conduct further attacks. The highest threat from this vulnerability is to data confidentiality and integrity.",
+        "cvssScore" : 7.4,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "cwe" : "CWE-89",
+        "cve" : "CVE-2020-25638",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-25638?component-type=maven&component-name=org.hibernate%2Fhibernate-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2019-14900",
+        "title" : "[CVE-2019-14900] CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "description" : "A flaw was found in Hibernate ORM in versions before 5.3.18, 5.4.18 and 5.5.0.Beta1. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is used in the SELECT or GROUP BY parts of the query. This flaw could allow an attacker to access unauthorized information or possibly conduct further attacks.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+        "cwe" : "CWE-89",
+        "cve" : "CVE-2019-14900",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-14900?component-type=maven&component-name=org.hibernate%2Fhibernate-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.7",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2018-19360",
+        "title" : "[CVE-2018-19360] CWE-502: Deserialization of Untrusted Data",
+        "description" : "FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the axis2-transport-jms class from polymorphic deserialization.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2018-19360",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2018-19360?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2018-19361",
+        "title" : "[CVE-2018-19361] CWE-502: Deserialization of Untrusted Data",
+        "description" : "FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the openjpa class from polymorphic deserialization.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2018-19361",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2018-19361?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2018-19362",
+        "title" : "[CVE-2018-19362] CWE-502: Deserialization of Untrusted Data",
+        "description" : "FasterXML jackson-databind 2.x before 2.9.8 might allow attackers to have unspecified impact by leveraging failure to block the jboss-common-core class from polymorphic deserialization.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2018-19362",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2018-19362?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-25649",
+        "title" : "[CVE-2020-25649] CWE-611: Improper Restriction of XML External Entity Reference ('XXE')",
+        "description" : "A flaw was found in FasterXML Jackson Databind, where it did not have entity expansion secured properly. This flaw allows vulnerability to XML external entity (XXE) attacks. The highest threat from this vulnerability is data integrity.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+        "cwe" : "CWE-611",
+        "cve" : "CVE-2020-25649",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-25649?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-36518",
+        "title" : "[CVE-2020-36518] CWE-787: Out-of-bounds Write",
+        "description" : "jackson-databind before 2.13.0 allows a Java StackOverflow exception and denial of service via a large depth of nested objects.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2020-36518",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-36518?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-beans:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-beans@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-beans@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22965",
+        "title" : "[CVE-2022-22965] CWE-94: Improper Control of Generation of Code ('Code Injection')",
+        "description" : "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-94",
+        "cve" : "CVE-2022-22965",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22965?component-type=maven&component-name=org.springframework%2Fspring-beans&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2022-1764",
+        "title" : "[sonatype-2022-1764] CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')",
+        "description" : "Spring-Beans-  Remote Code Execution (RCE) [CVE-2022-22965]\n\nThe application uses external input with reflection to select which classes or code to use, but it does not sufficiently prevent the input from selecting improper classes or code.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-470",
+        "cve" : "CVE-2022-22965",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2022-1764?component-type=maven&component-name=org.springframework%2Fspring-beans&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-webmvc:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-webmvc@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-webmvc@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-5397",
+        "title" : "[CVE-2020-5397] CWE-352: Cross-Site Request Forgery (CSRF)",
+        "description" : "Spring Framework, versions 5.2.x prior to 5.2.3 are vulnerable to CSRF attacks through CORS preflight requests that target Spring MVC (spring-webmvc module) or Spring WebFlux (spring-webflux module) endpoints. Only non-authenticated endpoints are vulnerable because preflight requests should not include credentials and therefore requests should fail authentication. However a notable exception to this are Chrome based browsers when using client certificates for authentication since Chrome sends TLS client certificates in CORS preflight requests in violation of spec requirements. No HTTP body can be sent or received as a result of this attack.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-352",
+        "cve" : "CVE-2020-5397",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-5397?component-type=maven&component-name=org.springframework%2Fspring-webmvc&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-22060",
+        "title" : "[CVE-2021-22060] CWE-117: Improper Output Neutralization for Logs",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.13, 5.2.0 - 5.2.18, and older unsupported versions, it is possible for a user to provide malicious input to cause the insertion of additional log entries. This is a follow-up to CVE-2021-22096 that protects against additional types of input and in more places of the Spring Framework codebase.",
+        "cvssScore" : 4.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-117",
+        "cve" : "CVE-2021-22060",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22060?component-type=maven&component-name=org.springframework%2Fspring-webmvc&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-web:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-web@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-web@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2016-1000027",
+        "title" : "[CVE-2016-1000027] CWE-502: Deserialization of Untrusted Data",
+        "description" : "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2016-1000027",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2016-1000027?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-22118",
+        "title" : "[CVE-2021-22118] CWE-269: Improper Privilege Management",
+        "description" : "In Spring Framework, versions 5.2.x prior to 5.2.15 and versions 5.3.x prior to 5.3.7, a WebFlux application is vulnerable to a privilege escalation: by (re)creating the temporary storage directory, a locally authenticated malicious user can read or modify files that have been uploaded to the WebFlux application, or overwrite arbitrary files with multipart request data.",
+        "cvssScore" : 7.8,
+        "cvssVector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-269",
+        "cve" : "CVE-2021-22118",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22118?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-5398",
+        "title" : "[CVE-2020-5398] CWE-494: Download of Code Without Integrity Check",
+        "description" : "In Spring Framework, versions 5.2.x prior to 5.2.3, versions 5.1.x prior to 5.1.13, and versions 5.0.x prior to 5.0.16, an application is vulnerable to a reflected file download (RFD) attack when it sets a \"Content-Disposition\" header in the response where the filename attribute is derived from user supplied input.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-494",
+        "cve" : "CVE-2020-5398",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-5398?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2020-5421",
+        "title" : "[CVE-2020-5421] CWE-20: Improper Input Validation",
+        "description" : "In Spring Framework versions 5.2.0 - 5.2.8, 5.1.0 - 5.1.17, 5.0.0 - 5.0.18, 4.3.0 - 4.3.28, and older unsupported versions, the protections against RFD attacks from CVE-2015-5211 may be bypassed depending on the browser used through the use of a jsessionid path parameter.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:H/A:N",
+        "cwe" : "CWE-20",
+        "cve" : "CVE-2020-5421",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-5421?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-22096",
+        "title" : "[CVE-2021-22096] CWE-117: Improper Output Neutralization for Logs",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.10, 5.2.0 - 5.2.17, and older unsupported versions, it is possible for a user to provide malicious input to cause the insertion of additional log entries.",
+        "cvssScore" : 4.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-117",
+        "cve" : "CVE-2021-22096",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22096?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework.boot:spring-boot:jar:2.1.0.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot@2.1.0.RELEASE",
+      "description" : "Spring Boot",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-27772",
+        "title" : "[CVE-2022-27772] CWE-668: Exposure of Resource to Wrong Sphere",
+        "description" : "** UNSUPPORTED WHEN ASSIGNED ** spring-boot versions prior to version v2.2.11.RELEASE was vulnerable to temporary directory hijacking. This vulnerability impacted the org.springframework.boot.web.server.AbstractConfigurableWebServerFactory.createTempDir method. NOTE: This vulnerability only affects products and/or versions that are no longer supported by the maintainer.",
+        "cvssScore" : 7.8,
+        "cvssVector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-668",
+        "cve" : "CVE-2022-27772",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-27772?component-type=maven&component-name=org.springframework.boot%2Fspring-boot&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-context:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-context@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-context@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22968",
+        "title" : "[CVE-2022-22968] CWE-178: Improper Handling of Case Sensitivity",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.18, 5.2.0 - 5.2.20, and older unsupported versions, the patterns for disallowedFields on a DataBinder are case sensitive which means a field is not effectively protected unless it is listed with both upper and lower case for the first character of the field, including upper and lower case for the first character of all nested fields within the property path.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-178",
+        "cve" : "CVE-2022-22968",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22968?component-type=maven&component-name=org.springframework%2Fspring-context&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "ch.qos.logback:logback-core:jar:1.2.3:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-core@1.2.3",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-core@1.2.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2021-4517",
+        "title" : "[sonatype-2021-4517] CWE-502: Deserialization of Untrusted Data",
+        "description" : "logback-classic - Deserialization of Untrusted Data [CVE-2021-42550]\n\nThe application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+        "cvssScore" : 6.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2021-42550",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4517?component-type=maven&component-name=ch.qos.logback%2Flogback-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2021-1175",
+        "title" : "1 vulnerability found",
+        "description" : "1 non-CVE vulnerability found. To see more details, please create a free account at https://ossindex.sonatype.org/ and request for this information using your registered account",
+        "cvssScore" : 8.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+        "cwe" : "CWE-699",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-1175"
+      } ]
+    },
+    "org.dom4j:dom4j:jar:2.1.1:compile" : {
+      "coordinates" : "pkg:maven/org.dom4j/dom4j@2.1.1",
+      "description" : "flexible XML framework for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.dom4j/dom4j@2.1.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-10683",
+        "title" : "[CVE-2020-10683] CWE-611: Improper Restriction of XML External Entity Reference ('XXE')",
+        "description" : "dom4j before 2.0.3 and 2.1.x before 2.1.3 allows external DTDs and External Entities by default, which might enable XXE attacks. However, there is popular external documentation from OWASP showing how to enable the safe, non-default behavior in any application that uses dom4j.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-611",
+        "cve" : "CVE-2020-10683",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-10683?component-type=maven&component-name=org.dom4j%2Fdom4j&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.12:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.12",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.12?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-25762",
+        "title" : "[CVE-2022-25762] CWE-404: Improper Resource Shutdown or Release",
+        "description" : "If a web application sends a WebSocket message concurrently with the WebSocket connection closing when running on Apache Tomcat 8.5.0 to 8.5.75 or Apache Tomcat 9.0.0.M1 to 9.0.20, it is possible that the application will continue to use the socket after it has been closed. The error handling triggered in this case could cause the a pooled object to be placed in the pool twice. This could result in subsequent connections using the same object concurrently which could result in data being returned to the wrong use and/or other errors.",
+        "cvssScore" : 8.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+        "cwe" : "CWE-404",
+        "cve" : "CVE-2022-25762",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-25762?component-type=maven&component-name=org.apache.tomcat.embed%2Ftomcat-embed-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2019-0232",
+        "title" : "[CVE-2019-0232] CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+        "description" : "When running on Windows with enableCmdLineArguments enabled, the CGI Servlet in Apache Tomcat 9.0.0.M1 to 9.0.17, 8.5.0 to 8.5.39 and 7.0.0 to 7.0.93 is vulnerable to Remote Code Execution due to a bug in the way the JRE passes command line arguments to Windows. The CGI Servlet is disabled by default. The CGI option enableCmdLineArguments is disable by default in Tomcat 9.0.x (and will be disabled by default in all versions in response to this vulnerability). For a detailed explanation of the JRE behaviour, see Markus Wulftange's blog (https://codewhitesec.blogspot.com/2016/02/java-and-command-line-injections-in-windows.html) and this archived MSDN blog (https://web.archive.org/web/20161228144344/https://blogs.msdn.microsoft.com/twistylittlepassagesallalike/2011/04/23/everyone-quotes-command-line-arguments-the-wrong-way/).",
+        "cvssScore" : 8.1,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-78",
+        "cve" : "CVE-2019-0232",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-0232?component-type=maven&component-name=org.apache.tomcat.embed%2Ftomcat-embed-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "junit:junit:jar:4.12:test" : {
+      "coordinates" : "pkg:maven/junit/junit@4.12",
+      "description" : "JUnit is a regression testing framework written by Erich Gamma and Kent Beck.\n        It is used by the developer who implements unit tests in Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/junit/junit@4.12?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-15250",
+        "title" : "[CVE-2020-15250] CWE-732: Incorrect Permission Assignment for Critical Resource",
+        "description" : "In JUnit4 from version 4.7 and before 4.13.1, the test rule TemporaryFolder contains a local information disclosure vulnerability. On Unix like systems, the system's temporary directory is shared between all users on that system. Because of this, when files and directories are written into this directory they are, by default, readable by other users on that same system. This vulnerability does not allow other users to overwrite the contents of these directories or files. This is purely an information disclosure vulnerability. This vulnerability impacts you if the JUnit tests write sensitive information, like API keys or passwords, into the temporary folder, and the JUnit tests execute in an environment where the OS has other untrusted users. Because certain JDK file system APIs were only added in JDK 1.7, this this fix is dependent upon the version of the JDK you are using. For Java 1.7 and higher users: this vulnerability is fixed in 4.13.1. For Java 1.6 and lower users: no patch is available, you must use the workaround below. If you are unable to patch, or are stuck running on Java 1.6, specifying the `java.io.tmpdir` system environment variable to a directory that is exclusively owned by the executing user will fix this vulnerability. For more information, including an example of vulnerable code, see the referenced GitHub Security Advisory.",
+        "cvssScore" : 5.5,
+        "cvssVector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+        "cwe" : "CWE-732",
+        "cve" : "CVE-2020-15250",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-15250?component-type=maven&component-name=junit%2Fjunit&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.9.7",
+      "description" : "Add-on module to support JSR-310 (Java 8 Date & Time API) data types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.9.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2018-1000873",
+        "title" : "[CVE-2018-1000873] CWE-20: Improper Input Validation",
+        "description" : "Fasterxml Jackson version Before 2.9.8 contains a CWE-20: Improper Input Validation vulnerability in Jackson-Modules-Java8 that can result in Causes a denial-of-service (DoS). This attack appear to be exploitable via The victim deserializes malicious input, specifically very large values in the nanoseconds field of a time value. This vulnerability appears to have been fixed in 2.9.8.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-20",
+        "cve" : "CVE-2018-1000873",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2018-1000873?component-type=maven&component-name=com.fasterxml.jackson.datatype%2Fjackson-datatype-jsr310&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework.data:spring-data-jpa:jar:2.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.data/spring-data-jpa@2.1.2.RELEASE",
+      "description" : "Spring Data module to provide sophisticated support for JPA repositories",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.data/spring-data-jpa@2.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2019-3797",
+        "title" : "[CVE-2019-3797] CWE-200: Information Exposure",
+        "description" : "This affects Spring Data JPA in versions up to and including 2.1.5, 2.0.13 and 1.11.19. Derived queries using any of the predicates âstartingWithâ, âendingWithâ or âcontainingâ could return more results than anticipated when a maliciously crafted query parameter value is supplied. Also, LIKE expressions in manually defined queries could return unexpected results if the parameter values bound did not have escaped reserved characters properly.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "cwe" : "CWE-200",
+        "cve" : "CVE-2019-3797",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-3797?component-type=maven&component-name=org.springframework.data%2Fspring-data-jpa&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2019-3802",
+        "title" : "[CVE-2019-3802] CWE-200: Information Exposure",
+        "description" : "This affects Spring Data JPA in versions up to and including 2.1.6, 2.0.14 and 1.11.20. ExampleMatcher using ExampleMatcher.StringMatcher.STARTING, ExampleMatcher.StringMatcher.ENDING or ExampleMatcher.StringMatcher.CONTAINING could return more results than anticipated when a maliciously crafted example value is supplied.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "cwe" : "CWE-200",
+        "cve" : "CVE-2019-3802",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2019-3802?component-type=maven&component-name=org.springframework.data%2Fspring-data-jpa&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "ch.qos.logback:logback-classic:jar:1.2.3:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-classic@1.2.3",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-classic@1.2.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2021-4517",
+        "title" : "[sonatype-2021-4517] CWE-502: Deserialization of Untrusted Data",
+        "description" : "logback-classic - Deserialization of Untrusted Data [CVE-2021-42550]\n\nThe application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+        "cvssScore" : 6.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2021-42550",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4517?component-type=maven&component-name=ch.qos.logback%2Flogback-classic&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.yaml:snakeyaml:jar:1.23:runtime" : {
+      "coordinates" : "pkg:maven/org.yaml/snakeyaml@1.23",
+      "description" : "YAML 1.1 parser and emitter for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.yaml/snakeyaml@1.23?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2017-18640",
+        "title" : "[CVE-2017-18640] CWE-776: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')",
+        "description" : "The Alias feature in SnakeYAML before 1.26 allows entity expansion during a load operation, a related issue to CVE-2003-1564.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-776",
+        "cve" : "CVE-2017-18640",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2017-18640?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2022-25857",
+        "title" : "[CVE-2022-25857] CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')",
+        "description" : "The package org.yaml:snakeyaml from 0 and before 1.31 are vulnerable to Denial of Service (DoS) due missing to nested depth limitation for collections.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-400",
+        "cve" : "CVE-2022-25857",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-25857?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2022-38752",
+        "title" : "[CVE-2022-38752] CWE-787: Out-of-bounds Write",
+        "description" : "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stack-overflow.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2022-38752",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-38752?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-expression:jar:5.1.2.RELEASE:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-expression@5.1.2.RELEASE",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-expression@5.1.2.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22950",
+        "title" : "[CVE-2022-22950] CWE-770: Allocation of Resources Without Limits or Throttling",
+        "description" : "n Spring Framework versions 5.3.0 - 5.3.16 and older unsupported versions, it is possible for a user to provide a specially crafted SpEL expression that may cause a denial of service condition.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-770",
+        "cve" : "CVE-2022-22950",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22950?component-type=maven&component-name=org.springframework%2Fspring-expression&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "net.minidev:json-smart:jar:2.3:test" : {
+      "coordinates" : "pkg:maven/net.minidev/json-smart@2.3",
+      "description" : "JSON (JavaScript Object Notation) is a lightweight data-interchange format.\n    It is easy for humans to read and write. It is easy for machines to parse and generate.\n    It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition\n    - December 1999. JSON is a text format that is completely language independent but uses\n    conventions that are familiar to programmers of the C-family of languages, including C, C++, C#,\n    Java, JavaScript, Perl, Python, and many others.\n    These properties make JSON an ideal data-interchange language.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.minidev/json-smart@2.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2021-27568",
+        "title" : "[CVE-2021-27568] CWE-754: Improper Check for Unusual or Exceptional Conditions",
+        "description" : "An issue was discovered in netplex json-smart-v1 through 2015-10-23 and json-smart-v2 through 2.4. An exception is thrown from a function, but it is not caught, as demonstrated by NumberFormatException. When it is not caught, it may cause programs using the library to crash or expose sensitive information.",
+        "cvssScore" : 9.1,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+        "cwe" : "CWE-754",
+        "cve" : "CVE-2021-27568",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-27568?component-type=maven&component-name=net.minidev%2Fjson-smart&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-31684",
+        "title" : "[CVE-2021-31684] CWE-787: Out-of-bounds Write",
+        "description" : "A vulnerability was discovered in the indexOf function of JSONParserByteArray in JSON Smart versions 1.3 and 2.4 which causes a denial of service (DOS) via a crafted web request.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2021-31684",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-31684?component-type=maven&component-name=net.minidev%2Fjson-smart&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework.boot:spring-boot-test:jar:2.1.0.RELEASE:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-test@2.1.0.RELEASE",
+      "description" : "Spring Boot Test",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-test@2.1.0.RELEASE?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-27772",
+        "title" : "[CVE-2022-27772] CWE-668: Exposure of Resource to Wrong Sphere",
+        "description" : "** UNSUPPORTED WHEN ASSIGNED ** spring-boot versions prior to version v2.2.11.RELEASE was vulnerable to temporary directory hijacking. This vulnerability impacted the org.springframework.boot.web.server.AbstractConfigurableWebServerFactory.createTempDir method. NOTE: This vulnerability only affects products and/or versions that are no longer supported by the maintainer.",
+        "cvssScore" : 7.8,
+        "cvssVector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-668",
+        "cve" : "CVE-2022-27772",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-27772?component-type=maven&component-name=org.springframework.boot%2Fspring-boot-test&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    }
+  }
+}

@@ -38,6 +38,10 @@ def k8s_releases():
     all_releases = get_github_releases("https://api.github.com/repos/kubernetes/kubernetes/releases")
     write_results(all_releases, "data/kubernetes_releases.json")
 
+def react_releases():
+    all_releases = get_github_releases("https://api.github.com/repos/facebook/react/releases")
+    write_results(all_releases, "data/react_releases.json")
 
 spring_releases()
 k8s_releases()
+react_releases()

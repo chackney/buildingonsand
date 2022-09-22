@@ -14,7 +14,15 @@ Maybe we can set the end date bases on something else.
 Alpine
 There are several release branches for Alpine Linux available at the same time. Each May and November we make a release branch from edge. The main repository is typically supported for 2 years and the community repository is supported until next stable release.
 Security fixes beyond that can be made on request when there are patches available.
+CVE:
+https://www.cvedetails.com/vendor/16697/Alpinelinux.html
 
 Data file headers are:
 Branch 	Branch date Git Branch 	Minor releases 	End of support
 Original page: https://alpinelinux.org/releases/
+
+Other Articles:
+https://www.helpnetsecurity.com/2021/02/17/cves-2020/
+
+Time to patch:
+https://www.mandiant.com/resources/blog/time-between-disclosure-patch-release-and-vulnerability-exploitation

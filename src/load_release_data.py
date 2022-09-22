@@ -1,7 +1,7 @@
 import psycopg2
 import json
 import csv
-from datetime import datetime
+from datetime import datetime, timedelta
 
 conn = psycopg2.connect(
     host="localhost",
@@ -10,8 +10,6 @@ conn = psycopg2.connect(
     password="")
 
 
-
-print("Connected")
 cursor = conn.cursor()
 conn.cursor().execute('delete  from buildingonsand."RELEASES"')
 conn.commit()
@@ -34,7 +32,7 @@ def load_spring_data():
     for item in spring_boot_releases:
         release_name = item['version']
         version_number = release_name
-        if not (version_number.__contains__('M') | version_number.__contains__('RC')):
+        if not (spring_invalid_versions(version_number)):
             if version_number.endswith('.RELEASE'):
                 version_number = version_number.strip('.RELEASE')
 
@@ -47,10 +45,50 @@ def load_spring_data():
                 support_dates = version_dates[version_lookup]
                 sql = "INSERT INTO buildingonsand.\"RELEASES\" (\"RELEASE_ID\",\"SOFTWARE_VERSION\", \"COMPONENT\", \"RELEASE_DATE\", \"OSS_SUPPORT_END_DATE\", \"SUPPORT_END_DATE\") values ('{}','{}','{}','{}','{}','{}')".format(release_id,version_number,'SPRING-BOOT',item['date'], support_dates['eofSupport'],support_dates['eodCommercialSupport'])
                 print(sql)
-                conn.cursor().execute(sql)
+                conn.component_cursor().execute(sql)
                 conn.commit()
 
 
+def load_react_data():
+    f = open("data/react_releases.json", "r")
+    react_releases = json.load(f)
+    # React - Assume support ended when new version came out
+    # Set initial date 1 year in the future
+    last_release_version_date = datetime.now() + timedelta(days=365)
+    last_major_version = 18
+    previous_date = datetime.now()
+    for item in react_releases:
+        release_name = item['version']
+        version_number = release_name.strip('v')
+
+        if not (react_invalid_versions(version_number)):
+            version_number = version_number.split('(')[0]
+
+            # The pre spring 2.0 release has dots in the wrong place.
+            version_number = version_number.strip('v').strip('.')
+            release_id = "REACT-" + release_name
+
+            if version_number:
+                split = version_number.split('.')
+                major_version = int(split[0]) if int(split[0]) != 0 else int(split[2])
+                if major_version < last_major_version:
+                    last_major_version = major_version
+                    last_release_version_date = previous_date
+
+                sql = "INSERT INTO buildingonsand.\"RELEASES\" (\"RELEASE_ID\",\"SOFTWARE_VERSION\", \"COMPONENT\", \"RELEASE_DATE\", \"OSS_SUPPORT_END_DATE\", \"SUPPORT_END_DATE\") values ('{}','{}','{}','{}','{}','{}')".format(release_id,version_number,'REACT',item['date'], last_release_version_date, last_release_version_date)
+                print(sql)
+                conn.component_cursor().execute(sql)
+                conn.commit()
+
+                previous_date = item['date']
+
+
+
+def spring_invalid_versions(version_number):
+    return (version_number.__contains__('M') | version_number.__contains__('RC'))
+
+def react_invalid_versions(version_number):
+    return (version_number.__contains__('alpha') | version_number.__contains__('RC'))
 ## Load Alpine Data:
 
 def load_alpine_data():
@@ -72,7 +110,7 @@ def load_alpine_data():
             release_id = 'ALPINE_' + alpine_release
             sql = "INSERT INTO buildingonsand.\"RELEASES\" (\"RELEASE_ID\",\"SOFTWARE_VERSION\", \"COMPONENT\", \"RELEASE_DATE\", \"OSS_SUPPORT_END_DATE\", \"SUPPORT_END_DATE\") values ('{}','{}','{}','{}','{}','{}')".format(release_id,alpine_striped,'ALPINE',row[1], previous_release_date, row[3])
             print(sql)
-            conn.cursor().execute(sql)
+            conn.component_cursor().execute(sql)
             conn.commit()
             previous_release_date = row[1]
 
@@ -107,10 +145,11 @@ def load_k8s_data():
                 support_dates = version_dates[version_lookup]
                 sql = "INSERT INTO buildingonsand.\"RELEASES\" (\"RELEASE_ID\",\"SOFTWARE_VERSION\", \"COMPONENT\", \"RELEASE_DATE\", \"OSS_SUPPORT_END_DATE\", \"SUPPORT_END_DATE\") values ('{}','{}','{}','{}','{}','{}')".format(release_id,version_number,'KUBERNETES',item['date'], support_dates['eofSupport'],support_dates['eodCommercialSupport'])
                 print(sql)
-                conn.cursor().execute(sql)
+                conn.component_cursor().execute(sql)
                 conn.commit()
 
 
 load_spring_data()
 load_alpine_data()
 load_k8s_data()
+load_react_data()

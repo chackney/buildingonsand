@@ -1,0 +1,818 @@
+{
+  "reports" : {
+    "org.opentest4j:opentest4j:jar:1.2.0:test" : {
+      "coordinates" : "pkg:maven/org.opentest4j/opentest4j@1.2.0",
+      "description" : "Open Test Alliance for the JVM",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.opentest4j/opentest4j@1.2.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.jboss.logging:jboss-logging:jar:3.4.2.Final:compile" : {
+      "coordinates" : "pkg:maven/org.jboss.logging/jboss-logging@3.4.2.Final",
+      "description" : "The JBoss Logging Framework",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.jboss.logging/jboss-logging@3.4.2.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.mockito:mockito-core:jar:3.6.28:test" : {
+      "coordinates" : "pkg:maven/org.mockito/mockito-core@3.6.28",
+      "description" : "Mock objects library for java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.mockito/mockito-core@3.6.28?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.core:jackson-databind:jar:2.11.4:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.11.4",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.11.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-36518",
+        "title" : "[CVE-2020-36518] CWE-787: Out-of-bounds Write",
+        "description" : "jackson-databind before 2.13.0 allows a Java StackOverflow exception and denial of service via a large depth of nested objects.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2020-36518",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-36518?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2021-4682",
+        "title" : "1 vulnerability found",
+        "description" : "1 non-CVE vulnerability found. To see more details, please create a free account at https://ossindex.sonatype.org/ and request for this information using your registered account",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-699",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4682"
+      } ]
+    },
+    "org.slf4j:slf4j-api:jar:1.7.32:compile" : {
+      "coordinates" : "pkg:maven/org.slf4j/slf4j-api@1.7.32",
+      "description" : "The slf4j API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.slf4j/slf4j-api@1.7.32?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-test:jar:2.4.9:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-test@2.4.9",
+      "description" : "Spring Boot Test Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-test@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.objenesis:objenesis:jar:3.1:test" : {
+      "coordinates" : "pkg:maven/org.objenesis/objenesis@3.1",
+      "description" : "A library for instantiating Java objects",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.objenesis/objenesis@3.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.sun.istack:istack-commons-runtime:jar:3.0.12:compile" : {
+      "coordinates" : "pkg:maven/com.sun.istack/istack-commons-runtime@3.0.12",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.sun.istack/istack-commons-runtime@3.0.12?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "jakarta.activation:jakarta.activation-api:jar:1.2.2:compile" : {
+      "coordinates" : "pkg:maven/jakarta.activation/jakarta.activation-api@1.2.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.activation/jakarta.activation-api@1.2.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.projectlombok:lombok:jar:1.18.20:compile" : {
+      "coordinates" : "pkg:maven/org.projectlombok/lombok@1.18.20",
+      "description" : "Spice up your java: Automatic Resource Management, automatic generation of getters, setters, equals, hashCode and toString, and more!",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.projectlombok/lombok@1.18.20?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-orm:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-orm@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-orm@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.junit.platform:junit-platform-commons:jar:1.7.2:test" : {
+      "coordinates" : "pkg:maven/org.junit.platform/junit-platform-commons@1.7.2",
+      "description" : "\"Module \"\"junit-platform-commons\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.platform/junit-platform-commons@1.7.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "jakarta.persistence:jakarta.persistence-api:jar:2.2.3:compile" : {
+      "coordinates" : "pkg:maven/jakarta.persistence/jakarta.persistence-api@2.2.3",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.persistence/jakarta.persistence-api@2.2.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-logging:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-logging@2.4.9",
+      "description" : "Spring Boot Logger Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-logging@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-expression:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-expression@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-expression@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22950",
+        "title" : "[CVE-2022-22950] CWE-770: Allocation of Resources Without Limits or Throttling",
+        "description" : "n Spring Framework versions 5.3.0 - 5.3.16 and older unsupported versions, it is possible for a user to provide a specially crafted SpEL expression that may cause a denial of service condition.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-770",
+        "cve" : "CVE-2022-22950",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22950?component-type=maven&component-name=org.springframework%2Fspring-expression&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.hdrhistogram:HdrHistogram:jar:2.1.12:compile" : {
+      "coordinates" : "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12",
+      "description" : "HdrHistogram supports the recording and analyzing sampled data value\n        counts across a configurable integer value range with configurable value\n        precision within the range. Value precision is expressed as the number of\n        significant digits in the value recording, and provides control over value\n        quantization behavior across the value range and the subsequent value\n        resolution at any given level.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.apiguardian:apiguardian-api:jar:1.1.0:test" : {
+      "coordinates" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.0",
+      "description" : "@API Guardian",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apiguardian/apiguardian-api@1.1.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.junit.platform:junit-platform-engine:jar:1.7.2:test" : {
+      "coordinates" : "pkg:maven/org.junit.platform/junit-platform-engine@1.7.2",
+      "description" : "\"Module \"\"junit-platform-engine\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.platform/junit-platform-engine@1.7.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "net.minidev:accessors-smart:jar:2.3.1:test" : {
+      "coordinates" : "pkg:maven/net.minidev/accessors-smart@2.3.1",
+      "description" : "Java reflect give poor performance on getter setter an constructor calls,\naccessors-smart use ASM to speed up those calls.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.minidev/accessors-smart@2.3.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter@2.4.9",
+      "description" : "Spring Boot Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-jdbc:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@2.4.9",
+      "description" : "Spring Boot JDBC Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-aop:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-aop@2.4.9",
+      "description" : "Spring Boot AOP Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-aop@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.zaxxer:HikariCP:jar:3.4.5:compile" : {
+      "coordinates" : "pkg:maven/com.zaxxer/HikariCP@3.4.5",
+      "description" : "Ultimate JDBC Connection Pool",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.zaxxer/HikariCP@3.4.5?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.apache.logging.log4j:log4j-api:jar:2.13.3:compile" : {
+      "coordinates" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.13.3",
+      "description" : "The Log4J API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.logging.log4j/log4j-api@2.13.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.yaml:snakeyaml:jar:1.27:compile" : {
+      "coordinates" : "pkg:maven/org.yaml/snakeyaml@1.27",
+      "description" : "YAML 1.1 parser and emitter for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.yaml/snakeyaml@1.27?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-25857",
+        "title" : "[CVE-2022-25857] CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')",
+        "description" : "The package org.yaml:snakeyaml from 0 and before 1.31 are vulnerable to Denial of Service (DoS) due missing to nested depth limitation for collections.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-400",
+        "cve" : "CVE-2022-25857",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-25857?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2022-38752",
+        "title" : "[CVE-2022-38752] CWE-787: Out-of-bounds Write",
+        "description" : "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stack-overflow.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2022-38752",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-38752?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.junit.jupiter:junit-jupiter-engine:jar:5.7.2:test" : {
+      "coordinates" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.7.2",
+      "description" : "\"Module \"\"junit-jupiter-engine\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.7.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "net.minidev:json-smart:jar:2.3.1:test" : {
+      "coordinates" : "pkg:maven/net.minidev/json-smart@2.3.1",
+      "description" : "JSON (JavaScript Object Notation) is a lightweight data-interchange format.\n    It is easy for humans to read and write. It is easy for machines to parse and generate.\n    It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition\n    - December 1999. JSON is a text format that is completely language independent but uses\n    conventions that are familiar to programmers of the C-family of languages, including C, C++, C#,\n    Java, JavaScript, Perl, Python, and many others.\n    These properties make JSON an ideal data-interchange language.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.minidev/json-smart@2.3.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2021-31684",
+        "title" : "[CVE-2021-31684] CWE-787: Out-of-bounds Write",
+        "description" : "A vulnerability was discovered in the indexOf function of JSONParserByteArray in JSON Smart versions 1.3 and 2.4 which causes a denial of service (DOS) via a crafted web request.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2021-31684",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-31684?component-type=maven&component-name=net.minidev%2Fjson-smart&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-test:jar:5.3.9:test" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-test@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-test@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "antlr:antlr:jar:2.7.7:compile" : {
+      "coordinates" : "pkg:maven/antlr/antlr@2.7.7",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/antlr/antlr@2.7.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.junit.jupiter:junit-jupiter-api:jar:5.7.2:test" : {
+      "coordinates" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.7.2",
+      "description" : "\"Module \"\"junit-jupiter-api\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.jupiter/junit-jupiter-api@5.7.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-test-autoconfigure:jar:2.4.9:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@2.4.9",
+      "description" : "Spring Boot Test Auto-Configure",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-webmvc:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-webmvc@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-webmvc@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2021-22060",
+        "title" : "[CVE-2021-22060] CWE-117: Improper Output Neutralization for Logs",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.13, 5.2.0 - 5.2.18, and older unsupported versions, it is possible for a user to provide malicious input to cause the insertion of additional log entries. This is a follow-up to CVE-2021-22096 that protects against additional types of input and in more places of the Spring Framework codebase.",
+        "cvssScore" : 4.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-117",
+        "cve" : "CVE-2021-22060",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22060?component-type=maven&component-name=org.springframework%2Fspring-webmvc&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.skyscreamer:jsonassert:jar:1.5.0:test" : {
+      "coordinates" : "pkg:maven/org.skyscreamer/jsonassert@1.5.0",
+      "description" : "A library to develop RESTful but flexible APIs",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.skyscreamer/jsonassert@1.5.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.xmlunit:xmlunit-core:jar:2.7.0:test" : {
+      "coordinates" : "pkg:maven/org.xmlunit/xmlunit-core@2.7.0",
+      "description" : "XMLUnit for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.xmlunit/xmlunit-core@2.7.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.jayway.jsonpath:json-path:jar:2.4.0:test" : {
+      "coordinates" : "pkg:maven/com.jayway.jsonpath/json-path@2.4.0",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.jayway.jsonpath/json-path@2.4.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.glassfish.jaxb:jaxb-runtime:jar:2.3.4:compile" : {
+      "coordinates" : "pkg:maven/org.glassfish.jaxb/jaxb-runtime@2.3.4",
+      "description" : "JAXB (JSR 222) Reference Implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.glassfish.jaxb/jaxb-runtime@2.3.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-tx:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-tx@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-tx@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile" : {
+      "coordinates" : "pkg:maven/jakarta.annotation/jakarta.annotation-api@1.3.5",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.annotation/jakarta.annotation-api@1.3.5?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-context:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-context@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-context@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22968",
+        "title" : "[CVE-2022-22968] CWE-178: Improper Handling of Case Sensitivity",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.18, 5.2.0 - 5.2.20, and older unsupported versions, the patterns for disallowedFields on a DataBinder are case sensitive which means a field is not effectively protected unless it is listed with both upper and lower case for the first character of the field, including upper and lower case for the first character of all nested fields within the property path.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-178",
+        "cve" : "CVE-2022-22968",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22968?component-type=maven&component-name=org.springframework%2Fspring-context&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-beans:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-beans@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-beans@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22965",
+        "title" : "[CVE-2022-22965] CWE-94: Improper Control of Generation of Code ('Code Injection')",
+        "description" : "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-94",
+        "cve" : "CVE-2022-22965",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22965?component-type=maven&component-name=org.springframework%2Fspring-beans&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2022-1764",
+        "title" : "[sonatype-2022-1764] CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')",
+        "description" : "Spring-Beans-  Remote Code Execution (RCE) [CVE-2022-22965]\n\nThe application uses external input with reflection to select which classes or code to use, but it does not sufficiently prevent the input from selecting improper classes or code.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-470",
+        "cve" : "CVE-2022-22965",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2022-1764?component-type=maven&component-name=org.springframework%2Fspring-beans&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@2.4.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.core:jackson-core:jar:2.11.4:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.11.4",
+      "description" : "Core Jackson abstractions, basic JSON streaming API implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-core@2.11.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.11.4:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.11.4",
+      "description" : "Add-on module to support JSR-310 (Java 8 Date & Time API) data types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.11.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hamcrest:hamcrest:jar:2.2:test" : {
+      "coordinates" : "pkg:maven/org.hamcrest/hamcrest@2.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hamcrest/hamcrest@2.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.apache.logging.log4j:log4j-to-slf4j:jar:2.13.3:compile" : {
+      "coordinates" : "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.13.3",
+      "description" : "Binding between LOG4J 2 API and SLF4J",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.13.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "jakarta.transaction:jakarta.transaction-api:jar:1.3.3:compile" : {
+      "coordinates" : "pkg:maven/jakarta.transaction/jakarta.transaction-api@1.3.3",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.transaction/jakarta.transaction-api@1.3.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-aop:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-aop@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-aop@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.javassist:javassist:jar:3.27.0-GA:compile" : {
+      "coordinates" : "pkg:maven/org.javassist/javassist@3.27.0-GA",
+      "description" : "Javassist (JAVA programming ASSISTant) makes Java bytecode manipulation\n     simple.  It is a class library for editing bytecodes in Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.javassist/javassist@3.27.0-GA?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.junit.jupiter:junit-jupiter-params:jar:5.7.2:test" : {
+      "coordinates" : "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.7.2",
+      "description" : "\"Module \"\"junit-jupiter-params\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.jupiter/junit-jupiter-params@5.7.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.data:spring-data-jpa:jar:2.4.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.data/spring-data-jpa@2.4.11",
+      "description" : "Spring Data module to provide sophisticated support for JPA repositories",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.data/spring-data-jpa@2.4.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-actuator:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@2.4.9",
+      "description" : "Spring Boot Actuator Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-actuator@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-aspects:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-aspects@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-aspects@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-actuator:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-actuator@2.4.9",
+      "description" : "Spring Boot Actuator",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-actuator@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-data-jpa:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@2.4.9",
+      "description" : "Spring Boot Data JPA Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.11.4:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.11.4",
+      "description" : "Add-on module for Jackson (http://jackson.codehaus.org) to support\nintrospection of method/constructor parameter names, without having to add explicit property name annotation.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.11.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hibernate.common:hibernate-commons-annotations:jar:5.1.2.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate.common/hibernate-commons-annotations@5.1.2.Final",
+      "description" : "Common reflection code used in support of annotation processing",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate.common/hibernate-commons-annotations@5.1.2.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.mockito:mockito-junit-jupiter:jar:3.6.28:test" : {
+      "coordinates" : "pkg:maven/org.mockito/mockito-junit-jupiter@3.6.28",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.mockito/mockito-junit-jupiter@3.6.28?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.aspectj:aspectjweaver:jar:1.9.7:compile" : {
+      "coordinates" : "pkg:maven/org.aspectj/aspectjweaver@1.9.7",
+      "description" : "The AspectJ weaver introduces advices to java classes",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.aspectj/aspectjweaver@1.9.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.11.4:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.11.4",
+      "description" : "Add-on module for Jackson (http://jackson.codehaus.org) to support\nJDK 8 data types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.11.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hsqldb:hsqldb:jar:2.5.2:compile" : {
+      "coordinates" : "pkg:maven/org.hsqldb/hsqldb@2.5.2",
+      "description" : "Lightweight 100% Java SQL Database Engine",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hsqldb/hsqldb@2.5.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-jcl:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-jcl@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-jcl@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.dom4j:dom4j:jar:2.1.3:compile" : {
+      "coordinates" : "pkg:maven/org.dom4j/dom4j@2.1.3",
+      "description" : "flexible XML framework for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.dom4j/dom4j@2.1.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "ch.qos.logback:logback-classic:jar:1.2.4:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-classic@1.2.4",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-classic@1.2.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2021-4517",
+        "title" : "[sonatype-2021-4517] CWE-502: Deserialization of Untrusted Data",
+        "description" : "logback-classic - Deserialization of Untrusted Data [CVE-2021-42550]\n\nThe application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+        "cvssScore" : 6.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2021-42550",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4517?component-type=maven&component-name=ch.qos.logback%2Flogback-classic&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.50:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.50",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.50?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "net.bytebuddy:byte-buddy:jar:1.10.22:compile" : {
+      "coordinates" : "pkg:maven/net.bytebuddy/byte-buddy@1.10.22",
+      "description" : "Byte Buddy is a Java library for creating Java classes at run time.\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.bytebuddy/byte-buddy@1.10.22?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.assertj:assertj-core:jar:3.18.1:test" : {
+      "coordinates" : "pkg:maven/org.assertj/assertj-core@3.18.1",
+      "description" : "Rich and fluent assertions for testing",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.assertj/assertj-core@3.18.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot@2.4.9",
+      "description" : "Spring Boot",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.fasterxml:classmate:jar:1.5.1:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml/classmate@1.5.1",
+      "description" : "Library for introspecting types with full generic information\nincluding resolving of field and method types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml/classmate@1.5.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.glassfish.jaxb:txw2:jar:2.3.4:compile" : {
+      "coordinates" : "pkg:maven/org.glassfish.jaxb/txw2@2.3.4",
+      "description" : "TXW is a library that allows you to write XML documents.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.glassfish.jaxb/txw2@2.3.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.junit.jupiter:junit-jupiter:jar:5.7.2:test" : {
+      "coordinates" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.7.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.jupiter/junit-jupiter@5.7.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-jdbc:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-jdbc@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-jdbc@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-tomcat:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@2.4.9",
+      "description" : "Spring Boot Tomcat Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile" : {
+      "coordinates" : "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@2.3.3",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@2.3.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.ow2.asm:asm:jar:5.0.4:test" : {
+      "coordinates" : "pkg:maven/org.ow2.asm/asm@5.0.4",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.ow2.asm/asm@5.0.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.slf4j:jul-to-slf4j:jar:1.7.32:compile" : {
+      "coordinates" : "pkg:maven/org.slf4j/jul-to-slf4j@1.7.32",
+      "description" : "JUL to SLF4J bridge",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.slf4j/jul-to-slf4j@1.7.32?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.latencyutils:LatencyUtils:jar:2.0.3:runtime" : {
+      "coordinates" : "pkg:maven/org.latencyutils/LatencyUtils@2.0.3",
+      "description" : "LatencyUtils is a package that provides latency recording and reporting utilities.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.latencyutils/LatencyUtils@2.0.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-test:jar:2.4.9:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-test@2.4.9",
+      "description" : "Spring Boot Test",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-test@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "ch.qos.logback:logback-core:jar:1.2.4:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-core@1.2.4",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-core@1.2.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2021-4517",
+        "title" : "[sonatype-2021-4517] CWE-502: Deserialization of Untrusted Data",
+        "description" : "logback-classic - Deserialization of Untrusted Data [CVE-2021-42550]\n\nThe application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+        "cvssScore" : 6.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2021-42550",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4517?component-type=maven&component-name=ch.qos.logback%2Flogback-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2021-1175",
+        "title" : "1 vulnerability found",
+        "description" : "1 non-CVE vulnerability found. To see more details, please create a free account at https://ossindex.sonatype.org/ and request for this information using your registered account",
+        "cvssScore" : 8.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+        "cwe" : "CWE-699",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-1175"
+      } ]
+    },
+    "com.sun.activation:jakarta.activation:jar:1.2.2:runtime" : {
+      "coordinates" : "pkg:maven/com.sun.activation/jakarta.activation@1.2.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.sun.activation/jakarta.activation@1.2.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.data:spring-data-commons:jar:2.4.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.data/spring-data-commons@2.4.11",
+      "description" : "Spring Data Commons. Interfaces and code shared between the various datastore specific implementations.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.data/spring-data-commons@2.4.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-web:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-web@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-web@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2016-1000027",
+        "title" : "[CVE-2016-1000027] CWE-502: Deserialization of Untrusted Data",
+        "description" : "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2016-1000027",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2016-1000027?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-22096",
+        "title" : "[CVE-2021-22096] CWE-117: Improper Output Neutralization for Logs",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.10, 5.2.0 - 5.2.17, and older unsupported versions, it is possible for a user to provide malicious input to cause the insertion of additional log entries.",
+        "cvssScore" : 4.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-117",
+        "cve" : "CVE-2021-22096",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22096?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework.boot:spring-boot-starter-web:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-web@2.4.9",
+      "description" : "Spring Boot Web Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-web@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.50:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@9.0.50",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@9.0.50?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2021-42340",
+        "title" : "[CVE-2021-42340] CWE-772: Missing Release of Resource after Effective Lifetime",
+        "description" : "The fix for bug 63362 present in Apache Tomcat 10.1.0-M1 to 10.1.0-M5, 10.0.0-M1 to 10.0.11, 9.0.40 to 9.0.53 and 8.5.60 to 8.5.71 introduced a memory leak. The object introduced to collect metrics for HTTP upgrade connections was not released for WebSocket connections once the connection was closed. This created a memory leak that, over time, could lead to a denial of service via an OutOfMemoryError.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-772",
+        "cve" : "CVE-2021-42340",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-42340?component-type=maven&component-name=org.apache.tomcat.embed%2Ftomcat-embed-websocket&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.glassfish:jakarta.el:jar:3.0.3:compile" : {
+      "coordinates" : "pkg:maven/org.glassfish/jakarta.el@3.0.3",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.glassfish/jakarta.el@3.0.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2020-1438",
+        "title" : "1 vulnerability found",
+        "description" : "1 non-CVE vulnerability found. To see more details, please create a free account at https://ossindex.sonatype.org/ and request for this information using your registered account",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-699",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2020-1438"
+      } ]
+    },
+    "com.fasterxml.jackson.core:jackson-annotations:jar:2.11.4:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.11.4",
+      "description" : "Core annotations used for value types, used by Jackson databinding package.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.11.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-autoconfigure:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@2.4.9",
+      "description" : "Spring Boot AutoConfigure",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-autoconfigure@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "net.bytebuddy:byte-buddy-agent:jar:1.10.22:test" : {
+      "coordinates" : "pkg:maven/net.bytebuddy/byte-buddy-agent@1.10.22",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.bytebuddy/byte-buddy-agent@1.10.22?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework.boot:spring-boot-starter-json:jar:2.4.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-json@2.4.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-json@2.4.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "io.micrometer:micrometer-core:jar:1.6.9:compile" : {
+      "coordinates" : "pkg:maven/io.micrometer/micrometer-core@1.6.9",
+      "description" : "Application monitoring instrumentation facade",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/io.micrometer/micrometer-core@1.6.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.hibernate:hibernate-core:jar:5.4.32.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate/hibernate-core@5.4.32.Final",
+      "description" : "A module of the Hibernate Core project",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate/hibernate-core@5.4.32.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test" : {
+      "coordinates" : "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1",
+      "description" : "????JSON (JavaScript Object Notation) is a lightweight data-interchange format.\n      This is the org.json compatible Android implementation extracted from the Android SDK\n   ??",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.springframework:spring-core:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-core@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-core@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    },
+    "org.jboss:jandex:jar:2.2.3.Final:compile" : {
+      "coordinates" : "pkg:maven/org.jboss/jandex@2.2.3.Final",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.jboss/jandex@2.2.3.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+    }
+  },
+  "vulnerable" : {
+    "org.springframework:spring-web:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-web@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-web@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2016-1000027",
+        "title" : "[CVE-2016-1000027] CWE-502: Deserialization of Untrusted Data",
+        "description" : "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2016-1000027",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2016-1000027?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2021-22096",
+        "title" : "[CVE-2021-22096] CWE-117: Improper Output Neutralization for Logs",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.10, 5.2.0 - 5.2.17, and older unsupported versions, it is possible for a user to provide malicious input to cause the insertion of additional log entries.",
+        "cvssScore" : 4.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-117",
+        "cve" : "CVE-2021-22096",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22096?component-type=maven&component-name=org.springframework%2Fspring-web&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-expression:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-expression@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-expression@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22950",
+        "title" : "[CVE-2022-22950] CWE-770: Allocation of Resources Without Limits or Throttling",
+        "description" : "n Spring Framework versions 5.3.0 - 5.3.16 and older unsupported versions, it is possible for a user to provide a specially crafted SpEL expression that may cause a denial of service condition.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-770",
+        "cve" : "CVE-2022-22950",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22950?component-type=maven&component-name=org.springframework%2Fspring-expression&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.50:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@9.0.50",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@9.0.50?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2021-42340",
+        "title" : "[CVE-2021-42340] CWE-772: Missing Release of Resource after Effective Lifetime",
+        "description" : "The fix for bug 63362 present in Apache Tomcat 10.1.0-M1 to 10.1.0-M5, 10.0.0-M1 to 10.0.11, 9.0.40 to 9.0.53 and 8.5.60 to 8.5.71 introduced a memory leak. The object introduced to collect metrics for HTTP upgrade connections was not released for WebSocket connections once the connection was closed. This created a memory leak that, over time, could lead to a denial of service via an OutOfMemoryError.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-772",
+        "cve" : "CVE-2021-42340",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-42340?component-type=maven&component-name=org.apache.tomcat.embed%2Ftomcat-embed-websocket&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.glassfish:jakarta.el:jar:3.0.3:compile" : {
+      "coordinates" : "pkg:maven/org.glassfish/jakarta.el@3.0.3",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.glassfish/jakarta.el@3.0.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2020-1438",
+        "title" : "1 vulnerability found",
+        "description" : "1 non-CVE vulnerability found. To see more details, please create a free account at https://ossindex.sonatype.org/ and request for this information using your registered account",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-699",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2020-1438"
+      } ]
+    },
+    "com.fasterxml.jackson.core:jackson-databind:jar:2.11.4:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.11.4",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.11.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2020-36518",
+        "title" : "[CVE-2020-36518] CWE-787: Out-of-bounds Write",
+        "description" : "jackson-databind before 2.13.0 allows a Java StackOverflow exception and denial of service via a large depth of nested objects.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2020-36518",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2020-36518?component-type=maven&component-name=com.fasterxml.jackson.core%2Fjackson-databind&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2021-4682",
+        "title" : "1 vulnerability found",
+        "description" : "1 non-CVE vulnerability found. To see more details, please create a free account at https://ossindex.sonatype.org/ and request for this information using your registered account",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-699",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4682"
+      } ]
+    },
+    "org.yaml:snakeyaml:jar:1.27:compile" : {
+      "coordinates" : "pkg:maven/org.yaml/snakeyaml@1.27",
+      "description" : "YAML 1.1 parser and emitter for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.yaml/snakeyaml@1.27?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-25857",
+        "title" : "[CVE-2022-25857] CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')",
+        "description" : "The package org.yaml:snakeyaml from 0 and before 1.31 are vulnerable to Denial of Service (DoS) due missing to nested depth limitation for collections.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-400",
+        "cve" : "CVE-2022-25857",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-25857?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "CVE-2022-38752",
+        "title" : "[CVE-2022-38752] CWE-787: Out-of-bounds Write",
+        "description" : "Using snakeYAML to parse untrusted YAML files may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stack-overflow.",
+        "cvssScore" : 6.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2022-38752",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-38752?component-type=maven&component-name=org.yaml%2Fsnakeyaml&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-context:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-context@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-context@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22968",
+        "title" : "[CVE-2022-22968] CWE-178: Improper Handling of Case Sensitivity",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.18, 5.2.0 - 5.2.20, and older unsupported versions, the patterns for disallowedFields on a DataBinder are case sensitive which means a field is not effectively protected unless it is listed with both upper and lower case for the first character of the field, including upper and lower case for the first character of all nested fields within the property path.",
+        "cvssScore" : 5.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-178",
+        "cve" : "CVE-2022-22968",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22968?component-type=maven&component-name=org.springframework%2Fspring-context&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-beans:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-beans@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-beans@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2022-22965",
+        "title" : "[CVE-2022-22965] CWE-94: Improper Control of Generation of Code ('Code Injection')",
+        "description" : "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-94",
+        "cve" : "CVE-2022-22965",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2022-22965?component-type=maven&component-name=org.springframework%2Fspring-beans&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2022-1764",
+        "title" : "[sonatype-2022-1764] CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')",
+        "description" : "Spring-Beans-  Remote Code Execution (RCE) [CVE-2022-22965]\n\nThe application uses external input with reflection to select which classes or code to use, but it does not sufficiently prevent the input from selecting improper classes or code.",
+        "cvssScore" : 9.8,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-470",
+        "cve" : "CVE-2022-22965",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2022-1764?component-type=maven&component-name=org.springframework%2Fspring-beans&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "net.minidev:json-smart:jar:2.3.1:test" : {
+      "coordinates" : "pkg:maven/net.minidev/json-smart@2.3.1",
+      "description" : "JSON (JavaScript Object Notation) is a lightweight data-interchange format.\n    It is easy for humans to read and write. It is easy for machines to parse and generate.\n    It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition\n    - December 1999. JSON is a text format that is completely language independent but uses\n    conventions that are familiar to programmers of the C-family of languages, including C, C++, C#,\n    Java, JavaScript, Perl, Python, and many others.\n    These properties make JSON an ideal data-interchange language.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.minidev/json-smart@2.3.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2021-31684",
+        "title" : "[CVE-2021-31684] CWE-787: Out-of-bounds Write",
+        "description" : "A vulnerability was discovered in the indexOf function of JSONParserByteArray in JSON Smart versions 1.3 and 2.4 which causes a denial of service (DOS) via a crafted web request.",
+        "cvssScore" : 7.5,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cwe" : "CWE-787",
+        "cve" : "CVE-2021-31684",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-31684?component-type=maven&component-name=net.minidev%2Fjson-smart&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "ch.qos.logback:logback-core:jar:1.2.4:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-core@1.2.4",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-core@1.2.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2021-4517",
+        "title" : "[sonatype-2021-4517] CWE-502: Deserialization of Untrusted Data",
+        "description" : "logback-classic - Deserialization of Untrusted Data [CVE-2021-42550]\n\nThe application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+        "cvssScore" : 6.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2021-42550",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4517?component-type=maven&component-name=ch.qos.logback%2Flogback-core&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      }, {
+        "id" : "sonatype-2021-1175",
+        "title" : "1 vulnerability found",
+        "description" : "1 non-CVE vulnerability found. To see more details, please create a free account at https://ossindex.sonatype.org/ and request for this information using your registered account",
+        "cvssScore" : 8.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+        "cwe" : "CWE-699",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-1175"
+      } ]
+    },
+    "ch.qos.logback:logback-classic:jar:1.2.4:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-classic@1.2.4",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-classic@1.2.4?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "sonatype-2021-4517",
+        "title" : "[sonatype-2021-4517] CWE-502: Deserialization of Untrusted Data",
+        "description" : "logback-classic - Deserialization of Untrusted Data [CVE-2021-42550]\n\nThe application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+        "cvssScore" : 6.6,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "cwe" : "CWE-502",
+        "cve" : "CVE-2021-42550",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/sonatype-2021-4517?component-type=maven&component-name=ch.qos.logback%2Flogback-classic&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    },
+    "org.springframework:spring-webmvc:jar:5.3.9:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-webmvc@5.3.9",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-webmvc@5.3.9?utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1",
+      "vulnerabilities" : [ {
+        "id" : "CVE-2021-22060",
+        "title" : "[CVE-2021-22060] CWE-117: Improper Output Neutralization for Logs",
+        "description" : "In Spring Framework versions 5.3.0 - 5.3.13, 5.2.0 - 5.2.18, and older unsupported versions, it is possible for a user to provide malicious input to cause the insertion of additional log entries. This is a follow-up to CVE-2021-22096 that protects against additional types of input and in more places of the Spring Framework codebase.",
+        "cvssScore" : 4.3,
+        "cvssVector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+        "cwe" : "CWE-117",
+        "cve" : "CVE-2021-22060",
+        "reference" : "https://ossindex.sonatype.org/vulnerability/CVE-2021-22060?component-type=maven&component-name=org.springframework%2Fspring-webmvc&utm_source=ossindex-client&utm_medium=integration&utm_content=1.1.1"
+      } ]
+    }
+  }
+}
